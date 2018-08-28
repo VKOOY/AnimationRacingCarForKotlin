@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.soul.widget.ScrollPlayView
+            android:id="@+id/mScrollPlayView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            app:direction="2"
+            app:resource="@mipmap/road" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.soul.widget.CarView
+                android:id="@+id/cv_car1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:car_resource="@mipmap/car1"
+                app:layout_constraintBottom_toTopOf="@id/cv_car2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.google.soul.widget.CarView>
+
+            <com.google.soul.widget.CarView
+                android:id="@+id/cv_car2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:car_resource="@mipmap/car2"
+                app:layout_constraintBottom_toTopOf="@id/cv_car3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_car1">
+
+            </com.google.soul.widget.CarView>
+
+            <com.google.soul.widget.CarView
+                android:id="@+id/cv_car3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:car_resource="@mipmap/car3"
+                app:layout_constraintBottom_toTopOf="@id/cv_car4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_car2">
+
+            </com.google.soul.widget.CarView>
+
+            <com.google.soul.widget.CarView
+                android:id="@+id/cv_car4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:car_resource="@mipmap/car4"
+                app:layout_constraintBottom_toTopOf="@id/cv_car5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_car3">
+
+            </com.google.soul.widget.CarView>
+
+            <com.google.soul.widget.CarView
+                android:id="@+id/cv_car5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:car_resource="@mipmap/car5"
+                app:layout_constraintBottom_toTopOf="@id/cv_car6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_car4">
+
+            </com.google.soul.widget.CarView>
+
+            <com.google.soul.widget.CarView
+                android:id="@+id/cv_car6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:car_resource="@mipmap/car6"
+                app:layout_constraintBottom_toTopOf="@id/cv_car7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_car5">
+
+            </com.google.soul.widget.CarView>
+
+            <com.google.soul.widget.CarView
+                android:id="@+id/cv_car7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:car_resource="@mipmap/car7"
+                app:layout_constraintBottom_toTopOf="@id/cv_car8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_car6">
+
+            </com.google.soul.widget.CarView>
+
+            <com.google.soul.widget.CarView
+                android:id="@+id/cv_car8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:car_resource="@mipmap/car8"
+                app:layout_constraintBottom_toTopOf="@id/cv_car9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_car7">
+
+            </com.google.soul.widget.CarView>
+
+            <com.google.soul.widget.CarView
+                android:id="@+id/cv_car9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:car_resource="@mipmap/car9"
+                app:layout_constraintBottom_toTopOf="@id/cv_car10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_car8">
+
+            </com.google.soul.widget.CarView>
+
+            <com.google.soul.widget.CarView
+                android:id="@+id/cv_car10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:car_resource="@mipmap/car10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_car9">
+
+            </com.google.soul.widget.CarView>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始" />
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="当前排名:"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</LinearLayout>
